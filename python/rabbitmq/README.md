@@ -50,23 +50,12 @@ saga-pattern/
 
 ## Setup Instructions
 
-1. **Create the directory structure:**
-```bash
-mkdir -p saga-pattern/{order-service,inventory-service,payment-service,delivery-service}
-cd saga-pattern
-```
-
-2. **Copy files to respective directories:**
-- Copy `docker-compose.yml` to the root
-- Copy `Dockerfile` and `requirements.txt` to each service directory
-- Copy the respective `app.py` to each service directory
-
-3. **Start all services:**
+1. **Start all services:**
 ```bash
 docker-compose up --build
 ```
 
-4. **Verify services are running:**
+2. **Verify services are running:**
 ```bash
 # Check all containers
 docker-compose ps
